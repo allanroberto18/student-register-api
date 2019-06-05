@@ -1,6 +1,6 @@
 <?php
 
-use App\Kernel;
+use Student\Register\Kernel;
 use Symfony\Component\Debug\Debug;
 use Symfony\Component\HttpFoundation\Request;
 
