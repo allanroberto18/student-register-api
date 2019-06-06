@@ -1,3 +1,7 @@
 index:
    path: /
    controller: Student\Register\Infrastructure\Controller\MainController::index
+
+student.load:
+   path: /student/{id}
+   controller: Student\Register\Infrastructure\Controller\StudentController::loadStudentById

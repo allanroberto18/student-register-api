@@ -5,16 +5,16 @@ namespace Student\Register\Tests\Infrastructure\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class MainControllerTest extends WebTestCase
+class StudentControllerTest extends WebTestCase
 {
     /**
-     * Check if the request is valid
+     * Check the requequest
      */
-    public function testIndex(): void
+    public function testLoadStudentById(): void
     {
         $client = static::createClient();
 
-        $client->request('GET', '/');
+        $client->request('GET', '/student/1');
 
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
     }
